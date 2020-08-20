@@ -58,13 +58,29 @@
 			children = (
 				2FB2ECE124EE963A00E04D16 /* AppDelegate.swift */,
 				2FB2ECE324EE963A00E04D16 /* SceneDelegate.swift */,
-				2FB2ECE524EE963A00E04D16 /* ViewController.swift */,
-				2FB2ECE724EE963A00E04D16 /* Main.storyboard */,
+				2FB2ECF624EE96C400E04D16 /* Controllers */,
+				2FB2ECF524EE96B300E04D16 /* Views */,
 				2FB2ECEA24EE963E00E04D16 /* Assets.xcassets */,
 				2FB2ECEC24EE963E00E04D16 /* LaunchScreen.storyboard */,
 				2FB2ECEF24EE963E00E04D16 /* Info.plist */,
 			);
 			path = "Foly FM";
+			sourceTree = "<group>";
+		};
+		2FB2ECF524EE96B300E04D16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2FB2ECE724EE963A00E04D16 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2FB2ECF624EE96C400E04D16 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2FB2ECE524EE963A00E04D16 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
