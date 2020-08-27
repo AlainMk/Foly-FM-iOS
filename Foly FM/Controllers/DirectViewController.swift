@@ -20,13 +20,26 @@ class DirectViewController: UIViewController {
         super.viewDidLoad()
         imageViewCover.layer.cornerRadius = 10
         buttonPlay.layer.cornerRadius = 0.5 * buttonPlay.bounds.size.width
-        // Do any additional setup after loading the view.
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        setGradientBackground()
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true
     }
+    
+    func setGradientBackground() {
+        let colorTop =  UIColor(red: 33.0/255.0, green: 150.0/255.0, blue: 243.0/255.0, alpha: 1.0).cgColor
+        let colorBottom = UIColor(red: 20.0/255.0, green: 21.0/255.0, blue: 22.0/255.0, alpha: 1.0).cgColor
+
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [colorTop, colorBottom]
+        gradientLayer.locations = [0.0, 0.95]
+        gradientLayer.frame = self.view.bounds
+
+        self.view.layer.insertSublayer(gradientLayer, at:0)
+    }
+    
     
 
 }
