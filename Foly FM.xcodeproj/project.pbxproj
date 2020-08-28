@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F50B77024F84BDB00328E27 /* ItemArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F50B76E24F84BDB00328E27 /* ItemArticleCell.swift */; };
+		2F50B77124F84BDB00328E27 /* ItemArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F50B76F24F84BDB00328E27 /* ItemArticleCell.xib */; };
+		2F50B77424F85BB700328E27 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F50B77324F85BB700328E27 /* Constants.swift */; };
 		2FB2ECE224EE963A00E04D16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB2ECE124EE963A00E04D16 /* AppDelegate.swift */; };
 		2FB2ECE424EE963A00E04D16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB2ECE324EE963A00E04D16 /* SceneDelegate.swift */; };
 		2FB2ECE924EE963A00E04D16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB2ECE724EE963A00E04D16 /* Main.storyboard */; };
@@ -17,9 +20,13 @@
 		2FB2ECFD24EE9AF800E04D16 /* ProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB2ECFC24EE9AF800E04D16 /* ProgramViewController.swift */; };
 		2FB2ECFF24EE9B0500E04D16 /* PlusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB2ECFE24EE9B0500E04D16 /* PlusViewController.swift */; };
 		2FB2ED0124EEAA1E00E04D16 /* DirectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB2ED0024EEAA1E00E04D16 /* DirectViewController.swift */; };
+		324F2B4ED2596C9E66FEBB4B /* Pods_Foly_FM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486A9E05A987B899029791D4 /* Pods_Foly_FM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F50B76E24F84BDB00328E27 /* ItemArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemArticleCell.swift; sourceTree = "<group>"; };
+		2F50B76F24F84BDB00328E27 /* ItemArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemArticleCell.xib; sourceTree = "<group>"; };
+		2F50B77324F85BB700328E27 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2FB2ECDE24EE963900E04D16 /* Foly FM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Foly FM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB2ECE124EE963A00E04D16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FB2ECE324EE963A00E04D16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +39,9 @@
 		2FB2ECFC24EE9AF800E04D16 /* ProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramViewController.swift; sourceTree = "<group>"; };
 		2FB2ECFE24EE9B0500E04D16 /* PlusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusViewController.swift; sourceTree = "<group>"; };
 		2FB2ED0024EEAA1E00E04D16 /* DirectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectViewController.swift; sourceTree = "<group>"; };
+		486A9E05A987B899029791D4 /* Pods_Foly_FM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foly_FM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA2F199E23C9E56D8AD1175 /* Pods-Foly FM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foly FM.release.xcconfig"; path = "Target Support Files/Pods-Foly FM/Pods-Foly FM.release.xcconfig"; sourceTree = "<group>"; };
+		7F7B22BC4A2AAF53AC370519 /* Pods-Foly FM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foly FM.debug.xcconfig"; path = "Target Support Files/Pods-Foly FM/Pods-Foly FM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				324F2B4ED2596C9E66FEBB4B /* Pods_Foly_FM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00C133DBB0156838F7850806 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F7B22BC4A2AAF53AC370519 /* Pods-Foly FM.debug.xcconfig */,
+				4DA2F199E23C9E56D8AD1175 /* Pods-Foly FM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2F50B77224F85B6200328E27 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2F50B77324F85BB700328E27 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		2FB2ECD524EE963900E04D16 = {
 			isa = PBXGroup;
 			children = (
 				2FB2ECE024EE963900E04D16 /* Foly FM */,
 				2FB2ECDF24EE963900E04D16 /* Products */,
+				00C133DBB0156838F7850806 /* Pods */,
+				6B1629CECB8A97F6DC65793D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +94,7 @@
 		2FB2ECE024EE963900E04D16 /* Foly FM */ = {
 			isa = PBXGroup;
 			children = (
+				2F50B77224F85B6200328E27 /* Utils */,
 				2FB2ECF724EE99F800E04D16 /* Models */,
 				2FB2ECE124EE963A00E04D16 /* AppDelegate.swift */,
 				2FB2ECE324EE963A00E04D16 /* SceneDelegate.swift */,
@@ -80,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				2FB2ECE724EE963A00E04D16 /* Main.storyboard */,
+				2F50B76E24F84BDB00328E27 /* ItemArticleCell.swift */,
+				2F50B76F24F84BDB00328E27 /* ItemArticleCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,6 +136,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		6B1629CECB8A97F6DC65793D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				486A9E05A987B899029791D4 /* Pods_Foly_FM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FB2ECF224EE963E00E04D16 /* Build configuration list for PBXNativeTarget "Foly FM" */;
 			buildPhases = (
+				F7B5373917782121017233D4 /* [CP] Check Pods Manifest.lock */,
 				2FB2ECDA24EE963900E04D16 /* Sources */,
 				2FB2ECDB24EE963900E04D16 /* Frameworks */,
 				2FB2ECDC24EE963900E04D16 /* Resources */,
+				72AF4FDCD5862053DC2F3874 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,10 +207,53 @@
 				2FB2ECEE24EE963E00E04D16 /* LaunchScreen.storyboard in Resources */,
 				2FB2ECEB24EE963E00E04D16 /* Assets.xcassets in Resources */,
 				2FB2ECE924EE963A00E04D16 /* Main.storyboard in Resources */,
+				2F50B77124F84BDB00328E27 /* ItemArticleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72AF4FDCD5862053DC2F3874 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foly FM/Pods-Foly FM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foly FM/Pods-Foly FM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Foly FM/Pods-Foly FM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7B5373917782121017233D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Foly FM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2FB2ECDA24EE963900E04D16 /* Sources */ = {
@@ -177,10 +263,12 @@
 				2FB2ECFF24EE9B0500E04D16 /* PlusViewController.swift in Sources */,
 				2FB2ECE224EE963A00E04D16 /* AppDelegate.swift in Sources */,
 				2FB2ED0124EEAA1E00E04D16 /* DirectViewController.swift in Sources */,
+				2F50B77024F84BDB00328E27 /* ItemArticleCell.swift in Sources */,
 				2FB2ECFB24EE9AE500E04D16 /* PodcastViewController.swift in Sources */,
 				2FB2ECE424EE963A00E04D16 /* SceneDelegate.swift in Sources */,
 				2FB2ECF924EE9ACE00E04D16 /* NewsViewController.swift in Sources */,
 				2FB2ECFD24EE9AF800E04D16 /* ProgramViewController.swift in Sources */,
+				2F50B77424F85BB700328E27 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +410,7 @@
 		};
 		2FB2ECF324EE963E00E04D16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F7B22BC4A2AAF53AC370519 /* Pods-Foly FM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,6 +428,7 @@
 		};
 		2FB2ECF424EE963E00E04D16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA2F199E23C9E56D8AD1175 /* Pods-Foly FM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
