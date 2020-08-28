@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CE3-dP-dIq">
-                        <rect key="frame" x="10" y="0.0" width="694" height="0.0"/>
+                        <rect key="frame" x="10" y="10" width="694" height="0.0"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="rFX-TR-eDz">
                                 <rect key="frame" x="0.0" y="0.0" width="694" height="0.0"/>
@@ -104,8 +104,8 @@
                 <constraints>
                     <constraint firstItem="CE3-dP-dIq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Bh2-jf-SKP"/>
                     <constraint firstAttribute="trailing" secondItem="CE3-dP-dIq" secondAttribute="trailing" constant="10" id="LSj-xl-YGb"/>
-                    <constraint firstAttribute="bottom" secondItem="CE3-dP-dIq" secondAttribute="bottom" constant="10" id="NqJ-xN-TdB"/>
-                    <constraint firstItem="CE3-dP-dIq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pgx-dA-uPJ"/>
+                    <constraint firstAttribute="bottom" secondItem="CE3-dP-dIq" secondAttribute="bottom" id="NqJ-xN-TdB"/>
+                    <constraint firstItem="CE3-dP-dIq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="pgx-dA-uPJ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

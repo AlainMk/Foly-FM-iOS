@@ -163,7 +163,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThK-Wv-wVI">
-                                <rect key="frame" x="52" y="558" width="65" height="65"/>
+                                <rect key="frame" x="52" y="555" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -259,19 +259,28 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" name="ColorPrimary"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="SRj-ub-eWq">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_19" translatesAutoresizingMaskIntoConstraints="NO" id="yL2-T0-3Nd">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_16" translatesAutoresizingMaskIntoConstraints="NO" id="yL2-T0-3Nd">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="C'est la planète Rap de Folie  avec les élément du monde" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgk-4N-nOC">
+                                            <rect key="frame" x="15" y="254.66666666666666" width="384" height="125.33333333333334"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" red="0.81568627449999997" green="0.0039215686269999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="yL2-T0-3Nd" secondAttribute="bottom" id="9K7-gs-sdb"/>
                                         <constraint firstAttribute="trailing" secondItem="yL2-T0-3Nd" secondAttribute="trailing" id="Ss4-L3-llQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="tgk-4N-nOC" secondAttribute="bottom" constant="20" id="anb-C7-qZw"/>
                                         <constraint firstItem="yL2-T0-3Nd" firstAttribute="leading" secondItem="SRj-ub-eWq" secondAttribute="leading" id="jj4-R4-gMM"/>
                                         <constraint firstItem="yL2-T0-3Nd" firstAttribute="top" secondItem="SRj-ub-eWq" secondAttribute="top" id="mRd-SF-aEy"/>
+                                        <constraint firstItem="tgk-4N-nOC" firstAttribute="leading" secondItem="SRj-ub-eWq" secondAttribute="leading" constant="15" id="qJC-jm-Vyp"/>
+                                        <constraint firstItem="tgk-4N-nOC" firstAttribute="centerX" secondItem="SRj-ub-eWq" secondAttribute="centerX" id="qqD-8u-2oX"/>
                                     </constraints>
                                 </view>
                             </tableView>
@@ -287,6 +296,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="sER-oq-GzP"/>
                     <connections>
+                        <outlet property="imageViewNewsCover" destination="yL2-T0-3Nd" id="Rev-FV-BMk"/>
                         <outlet property="tableView" destination="JWu-TY-KWK" id="ELy-Hz-l65"/>
                     </connections>
                 </viewController>
@@ -298,7 +308,7 @@
     <resources>
         <image name="Image" width="105.66666412353516" height="119"/>
         <image name="doc.plaintext" catalog="system" width="56" height="64"/>
-        <image name="image_19" width="262.5" height="175"/>
+        <image name="image_16" width="262.5" height="184.5"/>
         <image name="line.horizontal.3" catalog="system" width="64" height="32"/>
         <image name="livephoto" catalog="system" width="64" height="60"/>
         <image name="music.note.list" catalog="system" width="64" height="56"/>
